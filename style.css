@@ -1,0 +1,306 @@
+  
+      * {
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    main {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 375px));
+        grid-template-rows: repeat(8, 200px);
+        grid-gap: 1.5%;
+        padding: 5%;
+        background-color: hsl(226, 43%, 10%);
+    }
+    
+    #first-child {
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    #first-child1 {
+        background-color: hsl(246, 80%, 60%);
+        border-radius: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-inline-end: 8%;
+        padding-block: 2.5%;
+    }
+    
+    #img-div{
+       padding-right: 3%;
+       margin-right: 15%;
+       padding-block: 3%;
+    }
+    
+    #profile {
+        margin-left: -20%;
+        margin-top: 2%;
+    }
+    
+    #first-child1 img{
+        width: 50%;
+        display: block;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-bottom:  10%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #first-child1 p {
+        color: hsl(236, 100%, 87%);
+        font-size: 1.2rem;
+    }
+    
+    #first-child1 h2 {
+        color: white;
+        font-size: 1.5rem;
+        margin-top: -7%;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    li {
+        display: inline-block;
+        width: 30%;
+        padding-block: 3%;
+    }
+    
+    a {
+        text-decoration: none;
+        color: hsl(236, 100%, 87%);
+        display: block;
+    }
+    
+    #img-div {
+        flex: 30%;
+    }
+    
+    .menubar{
+        width: 50px;
+        display: flex;
+        height: 25px;
+        justify-content: flex-end;
+        margin-top: 7%;
+        transform: translateX(-30%);
+    }
+    .menu {
+        width: 7%;
+        height: 15%;
+        background-color: hsl(236, 100%, 94%);
+        border-radius: 50%;
+        margin-right: 5%;
+    }
+    
+    .others {
+       width: 100%;
+       height: 100%;
+       padding-top: 15%;
+       border-radius: 5%;
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .others1{
+        background-image: url("icon-work.svg");
+        background-color: hsl(15, 100%, 70%);
+    }
+    
+    .others1, .others2, .others3, .others4, .others5, .others6 {
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-position-y: -5%;
+    }
+    
+    .otherson, .otherson1{
+        background-color:  hsl(235, 46%, 20%);
+        height: 100%;
+        border-radius: 5%;
+      padding-block-start: 3%;
+        padding-inline-start: 8%;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .otherson:hover, .otherson1:hover{
+        background-color:  hsl(235, 45%, 61%);
+    }
+    
+    
+    #details{
+        display: flex;
+        margin-top: -5%;
+    }
+    
+    
+    .other1 h4{
+        flex: 70%;
+        color: rgb(255, 255, 255);
+        font-size: 0.9rem;
+    }
+    
+    .other1{
+        display: flex;
+        margin-bottom: -2%;
+    }
+    
+    .nvlink{
+        flex: 30%;
+    }
+    
+    .otherson .nv, .otherson1 .nv {
+        width: 5px;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: inline-block;
+        border-radius: 50%;
+    }
+    
+    .otherson h2, .otherson1 h2 {
+        color: rgb(255, 255, 255);
+        font-size: 1.6rem;
+        font-weight: lighter;
+        flex: 30%;
+    }
+    
+    
+    .otherson h5, .otherson1 h5 {
+        color: hsl(236, 100%, 87%);
+        font-size: 0.9rem;
+        padding-right: 5%;
+    }
+    
+    .others2{
+        background-image: url("icon-play.svg");
+        background-color: hsl(195, 74%, 62%);
+    }
+    .others3{
+        background-image: url("icon-study.svg");
+        background-color:  hsl(348, 100%, 68%);
+    }
+    
+    .others4{
+        background-image: url("icon-exercise.svg");
+        background-color:  hsl(145, 58%, 55%);
+    }
+    
+    .others5{
+        background-image: url("icon-social.svg");
+        background-color:  hsl(264, 64%, 52%);
+    }
+    
+    .others6{
+        background-image: url("icon-self-care.svg");
+        background-color:  hsl(43, 84%, 65%);
+    }
+    
+    @media screen and (min-width: 970px) {
+
+    * {
+        font-weight: lighter;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+       grid-gap: 15px;
+    }
+    
+    #details {
+        flex-direction: column;
+    }
+    #details h2{
+        font-size: 2rem;
+    }
+
+    #details h5 {
+        margin-top: -5%;
+    }
+
+    #first-child {
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 5%;
+        grid-row: 1/3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    #first-child1 {
+        background-color: hsl(246, 80%, 60%);
+        border-radius: 5%;
+        padding-inline-start: 10%;
+        padding-bottom: 15%;
+        flex: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        flex: 40%;
+        padding-block: 5%;
+    }
+    
+    
+    #profile{
+       flex: 100%;
+       padding-left: 20%;
+    }
+    
+    #img-div {
+        flex: 100%;
+
+    }
+    
+    #first-child1 img{
+        width: 40%;
+        display: block;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin-top: 7%;
+        margin-bottom:  23%;
+        position: relative;
+        top: 50%;
+        left: 23%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    #first-child1 p {
+        color: hsl(236, 100%, 87%);
+        font-size: 1.2rem;
+    }
+    
+    #first-child1 h2 {
+        color: white;
+        font-size: 2.4rem;
+        margin-top: -4%;
+    }
+    
+    li {
+        display: block;
+        padding-block: 3%;
+    }
+    }
+    
+    
+    
